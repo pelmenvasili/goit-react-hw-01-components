@@ -1,0 +1,59 @@
+.friendList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding-left: 0;
+}
+
+.friendList li {
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 15px;
+  background-color: black;
+}
+
+.status.online {
+  background-color: rgb(28, 137, 28);
+}
+
+.status.offline {
+  background-color: red;
+}
+
+.avatar {
+  width: 75px;
+  height: 75px;
+  /* border-radius: 50%; */
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
